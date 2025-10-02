@@ -7,7 +7,7 @@ import seaborn as sns
 # -------------------------
 # Load model
 # -------------------------
-with open('../linear_regression_model.pkl', 'rb') as f:
+with open('linear_regression_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # -------------------------
@@ -57,7 +57,7 @@ if st.button("🚀 Predict Sales"):
 # -------------------------
 # Load dataset for visualization
 # -------------------------
-df = pd.read_csv('../advertising.csv')
+df = pd.read_csv('advertising-linear-regression.csv')
 
 # -------------------------
 # Feature Influence Charts
